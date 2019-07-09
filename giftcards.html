@@ -1,53 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
 <head>
-  <title>Gift Cards</title>
-  <link rel="stylesheet" type="text/css" href="giftcards.css">
+    <title>Gift Cards</title>
+    <link rel="stylesheet" type="text/css" href="giftcards.css">
 </head>
+
 <body>
-  <div class="statement">
-    <p>
-      Stonefire Grill Gift Cards are the perfect gift for any occasion! We will ensure your gift recipients receive the very best on your behalf.
-    </p>
-  </div>
-  <div class="columns">
-    <div class="egift-column">
-      <h3>eGift Cards</h3>
-      <p>Need a last-minute gift? eGift cards give you all the benefits of a gift card with more options:</p>
-      <h4 class="informative">Amounts Available: $20-500</h4>
-      <ol class="circle-numbers custom">
-        <li>Choose your design</li>
-        <li>Select an amount</li>
-        <li>Write a personalized message</li>
-        <li>Deliver to an inbox immediately or specify the specific date to send</li>
-      </ol>
-      <a href="#"><button class="order-button">ORDER AN EGIFT CARD</button></a>
-    </div>
-    <div class="traditional-column">
-      <h3>Traditional Gift Cards</h3>
-      <p>Text goes here!<br>
-      Two lines...</p>
-      <h4 class="informative">Amounts Available: $20-2000</h4>
-      <ol class="circle-numbers custom">
-        <li>Select an amount</li>
-        <li>Delivered to a mailbox via US Postal Service within 14 business days (allow 48 hours for processing)</li>
-      </ol>
-      <div class="order-info">
-        <div class="amount-column">
-          <div>Amount ($20.00 minimum)</div>
-          <span>$ <input type="number" placeholder="20.00" min="20" max="2000"name="traditional-amount" id="traditional-amount"></input></span>
+    <div id="primary">
+        <div class="statement">
+            Stonefire Grill Gift Cards are the perfect gift for any occasion! We will ensure your gift recipients
+            receive the very best on your behalf.
         </div>
-        <div class="quantity-column">
-          <div>Quantity</div>
-          <span># <input type="number" name="traditional-quantity" id="traditional-quantity"></input></span>
+        <div class="columns">
+            <div class="column">
+                <h3>eGift Cards</h3>
+                <p>Need a last-minute gift? eGift cards give you all the benefits of a gift card with more options:</p>
+                <h4 class="informative">Amounts Available: $20-500</h4>
+                <ol class="circle-numbers custom">
+                    <li>Choose your design</li>
+                    <li>Select an amount</li>
+                    <li>Write a personalized message</li>
+                    <li>Deliver to an inbox immediately or specify the specific date to send</li>
+                </ol>
+                <a href="https://stonefiregrill.myguestaccount.com/guest/egift" class="order-button button"
+                    target="_blank" title="Order an egift card">Order an egift card</a>
+            </div>
+            <div class="column">
+                <h3>Traditional Gift Cards</h3>
+                <p>Text goes here!<br>
+                    Two lines...</p>
+                <h4 class="informative">Amounts Available: $20-2000</h4>
+                <ol class="circle-numbers custom">
+                    <li>Select an amount</li>
+                    <li>Delivered to a mailbox via US Postal Service within 14 business days (allow 48 hours for
+                        processing)</li>
+                </ol>
+                <div class="order-info">
+                    <div class="amount-column">
+                        <label>Amount ($20.00 minimum)</label>
+                        <input type="number" placeholder="20.00" min="20" max="2000" name="traditional-amount"
+                            id="traditional-amount"></input>
+                    </div>
+                    <div class="quantity-column">
+                        <label>Quantity</label>
+                        <input type="number" name="traditional-quantity" id="traditional-quantity"></input>
+                    </div>
+                </div>
+                <a href="#" class="order-button button">Order a traditional gift card</a>
+            </div>
         </div>
-      </div>
-      <a href="#"><button class="order-button">ORDER AN EGIFT CARD</button></a>
+        <div class="about-text">
+            <h3>About Gift Cards</h3>
+            <p>Stonefire Grill gift cards are the perfect gift for any occasion. Whether you need a gift for a birthday,
+                holiday or "just because," gift cards from Stonefire Grill are always the right choice. You can choose
+                to give a traditional gift card or if you need a last-minute gift, you can email a personalized eGift
+                card right away. Both types of gift cards are redeemable at any Stonefire Grill location.</p>
+        </div>
+        <div class="question">
+            <p>Already have a Stonefire Grill Gift Card?</p>
+            <a href="https://stonefiregrill.myguestaccount.com/guest/nologin/account-balance"
+                class="narrow-button button" target="_blank" title="Check Your Balance">Check Your Balance</a>
+        </div>
     </div>
-  </div>
-  <div class="centered-text">
-    <h3>About Gift Cards</h3>
-    <p>Stonefire Grill gift cards are the perfect gift for any occasion. Whether you need a gift for a birthday, holiday or "just because," gift cards from Stonefire Grill are always the right choice. You can choose to give a traditional gift card or if you need a last-minute gift, you can email a personalized eGift card right away. Both types of gift cards are redeemable at any Stonefire Grill location.</p>
-  </div>
-  <hr>
-  <div class="centered-text"><span class="question">Already have a Stonefire Grill Gift Card?</span><a href="#"><button class="narrow-button">Check Your Balance</button></a></div>
-  <hr>
 </body>
+
+</html>
