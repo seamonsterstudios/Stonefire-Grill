@@ -161,8 +161,9 @@ span.circle-numbers {
   color: #920029;
 }
 .centered-text {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -200,9 +201,15 @@ span.circle-numbers {
   }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 950px) {
+  .columns h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 780px){
   .columns ol.custom >li:last-child {
-    line-height: 28;
+    line-height: 28px;
   }
   .traditional-column, 
   .egift-column {
