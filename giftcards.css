@@ -16,6 +16,29 @@ h3 {
   color: #920029;
 }
 
+.statement {
+  color: #920029;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  font-size: 23px;
+  line-height: 1.5em;
+  margin: auto;
+  float: none;
+  clear: both;
+}
+
+.statement:after {
+  clear: both;
+  display: table;
+  width: 80px;
+  border-bottom: 3px solid #920029;
+  content: "";
+  margin: auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
 h4 {
   font-size: 24px;
   line-height: 24px;
@@ -30,37 +53,31 @@ p {
 
 ol.custom {
   list-style-type: none;
-  margin-left: 0;
+  margin: 30px 0 0 0;
+  padding:0;
 }
 
 ol.custom > li {
   counter-increment: customlistcounter;
-  line-height: 60px;
-  position: relative;
-  right: 30px;
+  line-height: 1.5;
+  /* position: relative; */
+  /* right: 30px; */
 }
 
 ol.custom > li:before {
   content: counter(customlistcounter) " ";
   font-weight: bold;
-  float: left;
-  width: 3em;
-  display: block;
+  display: inline-block;
   height: 36px;
   width: 36px;
   line-height: 36px;
   position: relative;
-  top: 10px;
-  margin-right: 10px;
-
-  -moz-border-radius: 18px; /* or 50% */
+  margin: 0 10px 20px 0;
   border-radius: 18px; /* or 50% */
-
   background-color: #920029;
   color: white;
   text-align: center;
   font-size: 1.2em;
-
 }
 
 @media screen and (max-width: 1095px) {
@@ -87,19 +104,19 @@ ol.custom:first-child {
   flex-flow: row wrap; 
 }
 
+.traditional-column, 
 .egift-column {
-  width: 48%;
-  margin: 10px;
-}
-
-.traditional-column {
-  width: 48%;
-  margin: 10px;
+  width: calc(50% - 30px);
+  margin: 0px 15px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .informative {
   background-color: #E7DCC4;
-  padding: 8px 20px; 
+  padding: 8px 30px; 
+  margin: 0 -30px;
 }
 
 
