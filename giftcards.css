@@ -36,6 +36,8 @@ ol.custom {
 ol.custom > li {
   counter-increment: customlistcounter;
   line-height: 60px;
+  position: relative;
+  right: 30px;
 }
 
 ol.custom > li:before {
@@ -47,6 +49,9 @@ ol.custom > li:before {
   height: 36px;
   width: 36px;
   line-height: 36px;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
 
   -moz-border-radius: 18px; /* or 50% */
   border-radius: 18px; /* or 50% */
@@ -54,8 +59,23 @@ ol.custom > li:before {
   background-color: #920029;
   color: white;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.2em;
 
+}
+
+@media screen and (max-width: 1095px) {
+  .columns ol.custom >li:last-child {
+    line-height: 28px;
+  }
+}
+
+.traditional-column div {
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+.traditional-column input {
+  padding: 8px;
 }
 
 ol.custom:first-child {
@@ -98,10 +118,23 @@ span.circle-numbers {
   font-size: 2em;
 }
 
+.order-info {
+  display: flex;
+}
+
+.amount-column {
+
+}
+
+.quantity-column {
+  margin-left: 20px;
+}
+
 .order-button {
   padding: 8px 100px;
   background-color: #920029;
   color: #FFFFFF;
+  margin-top: 10px;
 }
 
 .order-button :hover {
@@ -131,4 +164,24 @@ span.circle-numbers {
   background-color: #FFFFFF;
   color: #920029;
 }
+
+/* Media Queries */
+@media screen and (max-width: 1095px) {
+  .columns ol.custom >li:last-child {
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 1015px){
+  .egift-column .traditional-column {
+    margin: auto;
+  }
+  .columns ol.custom >li:last-child {
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .columns ol.custom >li:last-child {
+    line-height: 28;
 }
