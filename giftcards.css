@@ -60,20 +60,23 @@ ol.custom {
 ol.custom > li {
   counter-increment: customlistcounter;
   line-height: 1.5;
-  /* position: relative; */
-  /* right: 30px; */
+  position: relative;
+  vertical-align: middle;
+  display: block;
+  min-height: 36px;
+  margin-bottom: 20px;
+  padding-left: 46px;
 }
 
 ol.custom > li:before {
   content: counter(customlistcounter) " ";
   font-weight: bold;
-  display: inline-block;
   height: 36px;
   width: 36px;
   line-height: 36px;
-  position: relative;
-  margin: 0 10px 20px 0;
-  border-radius: 18px; /* or 50% */
+  position: absolute;
+  left: 0;
+  border-radius: 99px;
   background-color: #920029;
   color: white;
   text-align: center;
@@ -91,7 +94,13 @@ ol.custom > li:before {
   margin-bottom: 4px;
 }
 
-.traditional-column input {
+#traditional-amount {
+  min-width:175px;
+  padding: 8px;
+}
+
+#traditional-quantity {
+  max-width: 70px;
   padding: 8px;
 }
 
@@ -125,10 +134,7 @@ span.circle-numbers {
   height: 60px;
   width: 60px;
   line-height: 60px;
-
-  -moz-border-radius: 30px; /* or 50% */
   border-radius: 30px; /* or 50% */
-
   background-color: #920029;
   color: white;
   text-align: center;
@@ -137,10 +143,6 @@ span.circle-numbers {
 
 .order-info {
   display: flex;
-}
-
-.amount-column {
-
 }
 
 .quantity-column {
@@ -194,11 +196,17 @@ span.circle-numbers {
     margin: auto;
   }
   .columns ol.custom >li:last-child {
-    line-height: 60px;
+    line-height: 28px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px){
   .columns ol.custom >li:last-child {
     line-height: 28;
+  }
+  .traditional-column, 
+  .egift-column {
+    width: calc(80%);
+    margin: 20px auto;
+  }
 }
