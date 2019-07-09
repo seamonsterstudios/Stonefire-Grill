@@ -156,7 +156,8 @@ span.circle-numbers {
   margin-top: 10px;
 }
 
-.order-button :hover {
+.order-button:hover,
+.narrow-button:hover {
   background-color: #FFFFFF;
   color: #920029;
 }
@@ -180,11 +181,6 @@ span.circle-numbers {
   color: #FFFFFF;
 }
 
-.narrow-button :hover {
-  background-color: #FFFFFF;
-  color: #920029;
-}
-
 /* Media Queries */
 @media screen and (max-width: 1095px) {
   .columns ol.custom >li:last-child {
@@ -205,9 +201,12 @@ span.circle-numbers {
   .columns h3 {
     font-size: 22px;
   }
+  h4.informative {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 788px){
   .columns ol.custom >li:last-child {
     line-height: 28px;
   }
